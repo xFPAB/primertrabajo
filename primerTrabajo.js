@@ -7,9 +7,11 @@ class productManager {
     getProducts = () => {
         return this.products
     }
+
     getProductById = (id) => {
         return this.products.find((products) => products.id === id)
     }
+    
     addProduct = (title,description,price,thumbnail,code,stock) => {
         this.index++
         const id = this.index
